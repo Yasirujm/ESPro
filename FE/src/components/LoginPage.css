@@ -1,0 +1,238 @@
+/* LoginPage.css */
+.login-container {
+  background: linear-gradient(135deg, #7f2e5e 0%, #311f44 100%);
+  min-height: 100vh;
+  color: white;
+  font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+  padding: 20px;
+  position: relative;
+}
+
+.espro-logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.espro-logo {
+  height: 100px;
+  width: auto;
+}
+
+.login-content {
+  display: flex;
+  height: 100vh;
+  padding-top: 80px;
+}
+
+.character-column {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.login-character {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  background: rgba(49, 31, 68, 0.6);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  margin-right: 40px;
+}
+
+.login-header h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #ff7eb3;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #ff7eb3;
+  box-shadow: 0 0 0 3px rgba(255, 126, 179, 0.2);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #ff05bc, #88365e);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 5, 188, 0.3);
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 5, 188, 0.4);
+}
+
+.signup-link {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 15px 0;
+  font-size: 0.95rem;
+}
+
+.signup-text {
+  color: #ff7eb3;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-left: 5px;
+}
+
+.signup-text:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.social-divider {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.divider-text {
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: white;
+  font-size: 0.95rem;
+}
+
+.social-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.facebook-btn:hover {
+  border-color: #3b5998;
+}
+
+.google-btn:hover {
+  border-color: #db4437;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1024px) {
+  .login-content {
+    flex-direction: column;
+    padding-top: 100px;
+    height: auto;
+  }
+
+  .character-column {
+    padding: 20px;
+    order: -1;
+  }
+
+  .form-column {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .login-character {
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  .espro-logo {
+    height: 100px;
+  }
+
+  .form-column {
+    padding: 30px 20px;
+  }
+
+  .login-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+}

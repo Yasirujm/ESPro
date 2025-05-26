@@ -1,0 +1,117 @@
+.highlights-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  position: relative; /* Allows absolute positioning within this container */
+}
+
+h2 {
+  margin-top: 30px;
+  color: #e63946;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.video-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  color: white;
+  transition: transform 0.2s;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
+}
+
+.thumbnail-container {
+  position: relative;
+}
+
+.thumbnail-container img {
+  width: 100%;
+  display: block;
+}
+
+.live-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.video-info {
+  padding: 10px;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s ease;
+  text-decoration: none; /* Remove underline */
+}
+
+.video-channel {
+  font-size: 12px;
+  color: #ccc;
+  text-decoration: none; /* Remove underline */
+}
+
+/* Search Bar - Updated to be positioned in the top right corner */
+.search-form {
+  position: absolute;
+  top: 20px;  /* Adjust based on your layout */
+  right: 20px;  /* Align to the right */
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-button {
+  padding: 8px 20px;
+  border: none;
+  background-color: #e63946;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.video-card:hover .video-title {
+  color: red;
+}
+
+.video-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  color: white;
+  transition: transform 0.2s;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
+} 

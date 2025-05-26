@@ -1,0 +1,156 @@
+/* App.css */
+.landing-container {
+  background: linear-gradient(135deg, #7f2e5e 0%, #311f44 100%);
+  min-height: 100vh;
+  display: flex;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+/* Logo positioned at absolute top-left corner */
+.logo-image {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 120px;
+  width: auto;
+  z-index: 10;
+}
+
+.content-column {
+  flex: 1;
+  padding: 60px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-column {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 40px;
+}
+
+/* New ES PRO title */
+.es-pro-title {
+  font-size: 72px;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.e-trainer-title {
+  font-size: 48px;
+  margin: 10px 0 30px 0;
+  background: linear-gradient(90deg, #ff7eb3 0%, white 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 0 40px 0;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.signup-btn {
+  padding: 15px 30px;
+  height: 50px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #FF05BC, #88304E);
+  color: white;
+  border: none;
+  /* 👇 fine-tune positioning */
+ margin-top: 10px;
+}
+
+.login-btn {
+  padding: 15px 30px;
+  height: 50px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #FF05BC, #88304E);
+  color: white;
+  border: none;
+}
+
+.signup-btn:hover,
+.login-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.character-image {
+  height: 90vh;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+@media (max-width: 768px) {
+  .landing-container {
+    flex-direction: column;
+  }
+
+  .content-column {
+    padding: 80px 20px 40px;
+    order: 2;
+  }
+
+  .image-column {
+    padding: 20px;
+    order: 1;
+  }
+
+  .character-image {
+    height: 50vh;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .logo-image {
+    top: 15px;
+    left: 15px;
+    height: 120px;
+  }
+
+  .es-pro-title {
+    font-size: 48px;
+  }
+
+  .e-trainer-title {
+    font-size: 36px;
+  }
+}

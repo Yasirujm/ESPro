@@ -1,0 +1,33 @@
+.reaction-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #1a1a1a;
+  transition: background-color 0.3s ease;
+}
+
+.reaction-page.ready {
+  background-color: #222; /* warning */
+}
+
+.reaction-page.now {
+  background-color: #00cc44; /* green = go */
+}
+
+.reaction-box {
+  text-align: center;
+  color: white;
+}
+
+.reaction-box h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.result {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #e50914;
+}

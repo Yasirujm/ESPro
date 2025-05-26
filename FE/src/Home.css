@@ -1,0 +1,188 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+/* App Container */
+.app {
+  text-align: center;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e50914;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #e50914;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Profile Icon Styling */
+.profile-icon {
+  font-size: 1.5rem;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Carousel Styling */
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #111;
+  padding: 1rem;
+}
+
+.carousel-slide img {
+  width: 60%;
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #f9f9f9;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.carousel-button:first-of-type {
+  left: 1rem;
+}
+
+.carousel-button:last-of-type {
+  right: 1rem;
+}
+
+/* Features Section Styling */
+.features {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 2rem; 
+  padding: 2rem;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+/* Feature Card Styling */
+.card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #e50914;
+  align-self: flex-start;
+  transition: color 0.3s;
+}
+
+.card:hover h3 {
+  color: white;
+}
+
+.card img {
+  width: 70%;
+  border-radius: 8px;
+  margin-top: 1rem;
+  display: block;
+}
+
+.coming-soon {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #ffa500;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #e7e5e5;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  z-index: 1000;
+  width: 120px;
+}
+
+.dropdown-item {
+  padding: 10px;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
