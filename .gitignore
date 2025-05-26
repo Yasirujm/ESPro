@@ -1,3 +1,5 @@
+# === Java / Spring Boot ===
+
 # Compiled class file
 *.class
 
@@ -19,6 +21,84 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Virtual machine crash logs
 hs_err_pid*
 replay_pid*
+
+# Maven / Gradle
+target/
+build/
+out/
+.gradle/
+!gradle-wrapper.jar
+dependency-reduced-pom.xml
+.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# === Node.js / React / Three.js ===
+
+# Dependency directory
+node_modules/
+
+# Production build output
+build/
+dist/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.*    # For .env.development, .env.production, etc.
+
+# Vite (if using Vite for Three.js or frontend)
+.vite/
+
+# ESLint cache
+.eslintcache
+
+# Coverage directory used by testing tools
+coverage/
+
+# === IDE / Editor Configurations ===
+
+# IntelliJ
+*.iml
+.idea/
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.loadpath
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# === OS / Misc Files ===
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Swap files
+*.swp
+*.swo
